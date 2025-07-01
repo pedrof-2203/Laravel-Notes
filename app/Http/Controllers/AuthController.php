@@ -24,11 +24,11 @@ class AuthController extends Controller
             ],
             // error messages
             [
-                'text_username.required' => 'O username é obrigatório. ',
-                'text_username.email' => 'Username deve ser um e-mail válido. ',
-                'text_password.required' => 'A senha é obrigatória. ',
-                'text_password.min' => 'A senha deve ter pelo menos :min caracteres. ',
-                'text_password.max' => 'A senha deve ter no máximo :max caracteres. ',
+                'text_username.required' => 'Username is mandatory. ',
+                'text_username.email' => 'Username must be a valid e-mail address. ',
+                'text_password.required' => 'Password is mandatory. ',
+                'text_password.min' => 'Password must be at least :min characters long. ',
+                'text_password.max' => 'Password must at most :max characters long. ',
             ]
         );
 
@@ -68,7 +68,9 @@ class AuthController extends Controller
             ]
         ]);
 
-        echo 'LOGIN COM SUCESSO';
+        // redirect to home 
+        return redirect()->to('/');
+
     }
 
     public function logout()
