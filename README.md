@@ -21,4 +21,15 @@ The main goal here was to practice the fundamentals of the framework, such as:
 - Blade   
 - Eloquent ORM  
 - Bootstrap   
-- Git e GitHub 
+- Git e GitHub
+  
+## Installation
+
+```bash
+git clone https://github.com/pedrof-2203/Laravel-Notes.git
+cd Laravel-Notes
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
