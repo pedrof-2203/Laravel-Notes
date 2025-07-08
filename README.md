@@ -21,7 +21,7 @@ The main goal here was to practice the fundamentals of the framework, such as:
 - Blade   
 - Eloquent ORM  
 - Bootstrap   
-- Git e GitHub
+- Git & GitHub
   
 ## Installation
 
